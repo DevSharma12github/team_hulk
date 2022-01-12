@@ -17,3 +17,13 @@ Priyanshi Soni
 Figma for prototype design. <br />
 Web development using Html, CSS and JavaScript.
 <br />
+<br />
+![home](https://user-images.githubusercontent.com/88711295/149096879-97296a86-c526-4101-b994-a7424f097fee.png)
+<br />
+<br />
+![product](https://user-images.githubusercontent.com/88711295/149096904-5e35d5c7-9f97-4484-b83a-b93c559574a8.png)
+<br />
+<br />
+![profile](https://user-images.githubusercontent.com/88711295/149097123-705b5f15-b6a8-43be-a959-52a6bf794cd8.png)
+<br />
+<br />
