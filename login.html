@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Login page.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/login.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <a href="/home.html"><img id="logo" src="/images/logo.png" alt="logo" /></a>
+        <div>
+          <input id="search-area" type="text" placeholder="What are you looking for?">
+          <img id="search" src="/images/icons/Search.png" alt="search" />
+        </div>
+        <a href="/login.html"><button id="login">Login</button></a>
+        <img id="cart" src="/images/icons/Cart.png" alt="cart" />
+        <a href="/profile.html"><img id="profile" src="/images/icons/Profile.png" alt="profile" /></a>
+      </div>
+      
+      <div class="bottom-bar">
+        <span class="all">All Categories <img class="bottom-arrow" src="/images/icons/Arrow - Bottom.png" alt="bottom-arrow" /></span>
+        <span>NCERT Books</span>
+        <span>R.D. Sharma</span>
+        <span>JEE Books</span>
+        <span>Novels</span>
+      </div>
+    </header>
+
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <div class="input-field">
+            <input type="text" required />
+            <label>Email or Username</label>
+          </div>
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="about">
+          <p class="heading">About Us</p>
+          <a href=""><p class="content">About bookEDeasy</p></a>
+          <a href="/contact.html"><p class="content">Contact Us</p></a>
+        </div>
+  
+        <div class="bookedeasy">
+          <p class="heading">bookEDeasy</p>
+          <a href="/faq.html"><p class="content">FAQs</p></a>
+          <a href=""><p class="content">Terms & Conditions</p></a>
+        </div>
+  
+        <div class="follow">
+          <p class="heading">Follow Us</p>
+          <span>
+            <a href="https://instagram.com"><img src="/images/icons/instagram.png" alt="instagram"/></a>
+            <a href="https://facebook.com"><img src="/images/icons/facebook.png" alt="facebook" /></a>
+            <a href="https://twitter.com"><img src="/images/icons/twitter.png" alt="twitter" /></a>
+          </span>
+        </div>
+      </div>
+  
+      <div class="copyright">
+        <p>&copy; Copyright 2022</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById("signIn");
+    const container = document.getElementById("container");
+
+    signUpButton.addEventListener("click", () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener("click", () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
+</html>
